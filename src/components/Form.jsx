@@ -20,20 +20,22 @@ function Form() {
       <h1 className="text-3xl  font-bold line-through text-red-400">
         1.Get the values from input
       </h1>
+      <h1>hello from git</h1>
       <h1 className="text-3xl  font-bold line-through text-red-400">
         2.Set in the state variable
       </h1>
       <h1 className="text-3xl  font-bold  text-green-400">
         3.Show username and password in the App Component
       </h1>
-      <h1 className='text-3xl font-bold'>{username}</h1>
-      <h1 className="text-3xl text-indigo-700 font-semibold mb-10">Login</h1>
+      <h1 className="text-3xl font-bold">{username}</h1>
+      <h1 className="text-3xl text-indigo-700 font-semibold mb-4">Login</h1>
       <form>
         <label className="text-xl font-semibold mr-2">Username</label>
         <input
           className="border-2 border-indigo-700 rounded-md p-3 h-10 w-64"
           type="text"
           onChange={handleChange}
+          value={username}
         />
 
         <label className="text-xl font-semibold ml-2">Password</label>
@@ -41,6 +43,7 @@ function Form() {
           className="border-2 border-indigo-700 rounded-md p-3 ml-2 h-10 w-64"
           type="password"
           onChange={handlePasswordChange}
+          value={password}
         />
         <button
           type="submit"
