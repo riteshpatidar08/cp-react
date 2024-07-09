@@ -1,18 +1,15 @@
 import React from 'react';
 import { useState } from 'react';
 
-function Form() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-
+function Form({ username, password, setUsername, setPassword }) {
   const handleChange = (event) => {
     console.dir(event);
     console.log('Username is changed');
     setUsername(event.target.value);
   };
 
-  const handlePasswordChange = () => {
-    console.log('Password is changed');
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
   };
 
   return (
@@ -20,16 +17,15 @@ function Form() {
       <h1 className="text-3xl  font-bold line-through text-red-400">
         1.Get the values from input
       </h1>
-      <h1>hello from git</h1>
-      <h1>hello from git</h1>
-      <h1>hello from git</h1>
+
       <h1 className="text-3xl  font-bold line-through text-red-400">
         2.Set in the state variable
       </h1>
       <h1 className="text-3xl  font-bold  text-green-400">
         3.Show username and password in the App Component
       </h1>
-      <h1 className="text-3xl font-bold">{username}</h1>
+      <h1 className="text-3xl font-bold">Username ::{username}</h1>
+      <h1 className="text-3xl font-bold">Password ::{password}</h1>
       <h1 className="text-3xl text-indigo-700 font-semibold mb-4">Login</h1>
       <form>
         <label className="text-xl font-semibold mr-2">Username</label>
