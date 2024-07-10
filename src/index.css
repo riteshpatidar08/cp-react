@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --theme-primary:#FAF6F0;
+    --theme-text:#171717;
+    --theme-btn:#000000;
+    --theme-secondry:#F4DFC8;
+    --theme-main:#F4EAE0;
+
+/* }.hero{
+    min-height: 100vh;
+    display: flex;
+    background: linear-gradient(180deg, var(--theme-secondry), #e1ffea22 60%); */
